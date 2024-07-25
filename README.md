@@ -10,10 +10,10 @@ Para rodar o front-end em localhost você deve seguir os seguintes comandos:
 
 # Back-End
 Para rodar o back-end em localhost você deve criar um banco de dados e adicionar o link de acesso ao BD a um arquivo .env como exemplificado no .env.example
-Logo em seguida deve rodar os comandos do prisma para criar as tabelas no banco de dados
+. Logo em seguida deve rodar os comandos do prisma para criar as tabelas no banco de dados
 
 ```bash
-  npx prisma migrate depoy
+  npx prisma migrate deploy
 ```
 Após isso, rode seu projeto:
 
