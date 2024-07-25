@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Teste Técnico RevoluTI
 
-## Getting Started
-
-First, run the development server:
+# Front-End
+Para rodar o front-end em localhost você deve seguir os seguintes comandos:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  pnpm i
+  pnpm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Back-End
+Para rodar o back-end em localhost você deve criar um banco de dados e adicionar o link de acesso ao BD a um arquivo .env como exemplificado no .env.example
+Logo em seguida deve rodar os comandos do prisma para criar as tabelas no banco de dados
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npx prisma migrate depoy
+```
+Após isso, rode seu projeto:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+  pnpm run start:dev
+```
 
-## Learn More
+# Documentação da API
+Toda a documentação da API está no http://localhost:3333/docs
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Requisito extra
+Decidi fazer como requisitos extra, toda a parte de testes unitários e doumentação da API.
+Sabendo que um ambiente testado da forma correta é menos suscetível a erros e um código bem documentado é a chave para o desenvolvimento de um front-end com maior facilidade, além de tornar mais fácil a leitura e testes também da API.
+Na parte de front-end decidi utilizar o react-toastify para apresentar de forma mais dinâmica os erros e acertos do usuário final!
